@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		50562C397FD2BEBD612C2874 /* Pods_CoinsCap_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */; };
+		B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */; };
+		B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24321FDC23A00DD0FBD /* Fonts.swift */; };
+		B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24521FDC2CE00DD0FBD /* Colors.swift */; };
 		B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDB420ECA5E0008911BF /* AppDelegate.swift */; };
 		B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBB20ECA5E6008911BF /* Assets.xcassets */; };
 		B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		41BCE05825F916F9D360A412 /* Pods-CoinsCap_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		B20FF24321FDC23A00DD0FBD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B20FF24521FDC2CE00DD0FBD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B27CEDB120ECA5E0008911BF /* CoinsCap_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinsCap_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27CEDB420ECA5E0008911BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27CEDBB20ECA5E6008911BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +75,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B20FF24021FDC19000DD0FBD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */,
+				B20FF24321FDC23A00DD0FBD /* Fonts.swift */,
+				B20FF24521FDC2CE00DD0FBD /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B27CEDA820ECA5E0008911BF = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,7 @@
 		B27CEDB320ECA5E0008911BF /* CoinsCap_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B20FF24021FDC19000DD0FBD /* Helpers */,
 				B27CEDC620ECA616008911BF /* CoinsCap */,
 				B27CEDC720ECA626008911BF /* Storyboards */,
 				B27CEDC820ECA633008911BF /* Resources */,
@@ -290,11 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */,
+				B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */,
 				B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */,
 				B27CEDD220ECAB32008911BF /* ViewModelProtocol.swift in Sources */,
 				B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */,
 				B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */,
 				B27CEDD020ECA670008911BF /* Coin.swift in Sources */,
+				B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */,
 				B27CEDD420ECAF01008911BF /* MainViewViewModel.swift in Sources */,
 				B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */,
 				B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */,
