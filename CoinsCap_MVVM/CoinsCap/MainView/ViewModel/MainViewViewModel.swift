@@ -7,31 +7,47 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+protocol ViewModelProtocol {
+    
+    init(webService: WebServiceProtocol)
+    
+    var coinsCollection: BehaviorRelay<[Coin]> {get}
+    var webService: WebServiceProtocol {get}
+    var coinsCount: Int {get}
+
+    func getCurrentCoinsCap()
+    func getCoin(forRow row: Int) -> Coin
+}
+
 class MainViewViewModel: ViewModelProtocol {
     
-    // RxSwift Properties
+    // MARK: PUBLIC PROPERTIES
+    //---------------------------------------------------------------------------
     
-    let coinsCollection = Variable<[Coin]>([Coin]())
+    let webService: WebServiceProtocol
+    let coinsCollection = BehaviorRelay<[Coin]>(value: [Coin]())
     
-    // WebService
+    var coinsCount: Int {
+        return coinsCollection.value.count
+    }
     
-    var webService: WebServiceProtocol
-    
-    // Initializer
+    // MARK: INITIALIZERS
+    //---------------------------------------------------------------------------
 
     required init(webService: WebServiceProtocol = WebService()) {
         self.webService = webService
     }
     
-    // Get data from server
+    // MARK: PUBLIC METHODS
+    //---------------------------------------------------------------------------
     
     func getCurrentCoinsCap() {
         webService.getCoinsData(fromUrl: "https://api.coinmarketcap.com/v1/ticker/") { (coins, errorMessage) in
             
             switch (coins, errorMessage) {
-            case (let coin?, nil):
+            case (let coins?, nil):
                 
-                self.coinsCollection.value = coin
+                self.coinsCollection.accept(coins)
                 
             case (_, .some(let errorMessage)):
                 print(errorMessage)
@@ -39,5 +55,9 @@ class MainViewViewModel: ViewModelProtocol {
                 print("Defult case")
             }
         }
+    }
+    
+    func getCoin(forRow row: Int) -> Coin {
+        return coinsCollection.value[row]
     }
 }
