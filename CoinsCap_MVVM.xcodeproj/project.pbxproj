@@ -11,6 +11,7 @@
 		B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */; };
 		B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24321FDC23A00DD0FBD /* Fonts.swift */; };
 		B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24521FDC2CE00DD0FBD /* Colors.swift */; };
+		B20FF24821FDC41A00DD0FBD /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */; };
 		B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDB420ECA5E0008911BF /* AppDelegate.swift */; };
 		B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBB20ECA5E6008911BF /* Assets.xcassets */; };
 		B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		B20FF24321FDC23A00DD0FBD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B20FF24521FDC2CE00DD0FBD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		B27CEDB120ECA5E0008911BF /* CoinsCap_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinsCap_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27CEDB420ECA5E0008911BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27CEDBB20ECA5E6008911BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */,
 				B20FF24321FDC23A00DD0FBD /* Fonts.swift */,
 				B20FF24521FDC2CE00DD0FBD /* Colors.swift */,
+				B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */,
 				B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */,
+				B20FF24821FDC41A00DD0FBD /* UIViewController+Ext.swift in Sources */,
 				B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */,
 				B27CEDD220ECAB32008911BF /* ViewModelProtocol.swift in Sources */,
 				B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */,
