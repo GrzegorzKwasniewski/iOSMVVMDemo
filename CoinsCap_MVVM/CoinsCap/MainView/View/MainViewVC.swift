@@ -11,7 +11,23 @@ class MainViewVC: UITableViewController {
     
     // UI Views
     
-    @IBOutlet weak var coinLabel: UILabel!
+    private var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "news".localized
+        label.textAlignment = .left
+        label.font = Fonts.avenirBold.withSize(25)
+        label.textColor = Colors.darkGreyText
+        return label
+    }()
+    
+    private var coinLabel: UILabel = {
+        let label = UILabel()
+        label.text = "news".localized
+        label.textAlignment = .left
+        label.font = Fonts.avenirBold.withSize(25)
+        label.textColor = Colors.darkGreyText
+        return label
+    }()
     
     // RxSwift Properties
     
@@ -23,14 +39,13 @@ class MainViewVC: UITableViewController {
     
     // Initializers
     
-    init(viewModel: ViewModelProtocol) {
+    init(viewModel: ViewModelProtocol = MainViewViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.viewModel = MainViewViewModel(webService: WebService())
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     // View Lifecycle

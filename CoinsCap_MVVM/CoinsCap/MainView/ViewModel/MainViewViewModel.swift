@@ -19,7 +19,7 @@ class MainViewViewModel: ViewModelProtocol {
     
     // Initializer
 
-    required init(webService: WebServiceProtocol) {
+    required init(webService: WebServiceProtocol = WebService()) {
         self.webService = webService
     }
     
