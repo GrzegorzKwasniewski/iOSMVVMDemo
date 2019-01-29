@@ -19,7 +19,7 @@ protocol ViewModelProtocol {
     func getCoin(forRow row: Int) -> Coin
 }
 
-class MainViewViewModel: ViewModelProtocol {
+final class MainViewViewModel: ViewModelProtocol {
     
     // MARK: PUBLIC PROPERTIES
     //---------------------------------------------------------------------------

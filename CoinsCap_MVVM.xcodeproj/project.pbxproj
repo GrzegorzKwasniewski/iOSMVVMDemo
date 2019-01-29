@@ -12,6 +12,7 @@
 		B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24321FDC23A00DD0FBD /* Fonts.swift */; };
 		B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24521FDC2CE00DD0FBD /* Colors.swift */; };
 		B20FF24821FDC41A00DD0FBD /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */; };
+		B20FF25021FDE74300DD0FBD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24F21FDE74300DD0FBD /* MainView.swift */; };
 		B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDB420ECA5E0008911BF /* AppDelegate.swift */; };
 		B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBB20ECA5E6008911BF /* Assets.xcassets */; };
 		B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */; };
@@ -19,10 +20,10 @@
 		B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCB20ECA670008911BF /* MainViewVC.swift */; };
 		B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCC20ECA670008911BF /* CoinsDetailsVC.swift */; };
 		B27CEDD020ECA670008911BF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCD20ECA670008911BF /* Coin.swift */; };
-		B27CEDD220ECAB32008911BF /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD120ECAB32008911BF /* ViewModelProtocol.swift */; };
 		B27CEDD420ECAF01008911BF /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD320ECAF01008911BF /* MainViewViewModel.swift */; };
 		B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD620ECB8AB008911BF /* WebServiceProtocol.swift */; };
 		B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD820ECBAB4008911BF /* WebService.swift */; };
+		B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1ED2200DF1500B3E572 /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B20FF24321FDC23A00DD0FBD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B20FF24521FDC2CE00DD0FBD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		B20FF24F21FDE74300DD0FBD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B27CEDB120ECA5E0008911BF /* CoinsCap_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinsCap_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27CEDB420ECA5E0008911BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27CEDBB20ECA5E6008911BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,10 +42,10 @@
 		B27CEDCB20ECA670008911BF /* MainViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewVC.swift; sourceTree = "<group>"; };
 		B27CEDCC20ECA670008911BF /* CoinsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsDetailsVC.swift; sourceTree = "<group>"; };
 		B27CEDCD20ECA670008911BF /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		B27CEDD120ECAB32008911BF /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		B27CEDD320ECAF01008911BF /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		B27CEDD620ECB8AB008911BF /* WebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
 		B27CEDD820ECBAB4008911BF /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B284C1ED2200DF1500B3E572 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F7C9EB022B94CEDFC603C /* Pods-CoinsCap_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				B20FF24321FDC23A00DD0FBD /* Fonts.swift */,
 				B20FF24521FDC2CE00DD0FBD /* Colors.swift */,
 				B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */,
+				B284C1ED2200DF1500B3E572 /* View+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				B27CEDCB20ECA670008911BF /* MainViewVC.swift */,
+				B20FF24F21FDE74300DD0FBD /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,7 +228,6 @@
 		B27CEDDC20ECFF32008911BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B27CEDD120ECAB32008911BF /* ViewModelProtocol.swift */,
 				B27CEDD320ECAF01008911BF /* MainViewViewModel.swift */,
 			);
 			path = ViewModel;
@@ -359,16 +362,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */,
+				B20FF25021FDE74300DD0FBD /* MainView.swift in Sources */,
 				B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */,
 				B20FF24821FDC41A00DD0FBD /* UIViewController+Ext.swift in Sources */,
 				B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */,
-				B27CEDD220ECAB32008911BF /* ViewModelProtocol.swift in Sources */,
 				B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */,
 				B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */,
 				B27CEDD020ECA670008911BF /* Coin.swift in Sources */,
 				B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */,
 				B27CEDD420ECAF01008911BF /* MainViewViewModel.swift in Sources */,
 				B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */,
+				B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */,
 				B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
