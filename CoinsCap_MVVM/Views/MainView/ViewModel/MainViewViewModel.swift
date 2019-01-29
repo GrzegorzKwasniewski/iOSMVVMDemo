@@ -42,7 +42,7 @@ final class MainViewViewModel: ViewModelProtocol {
     //---------------------------------------------------------------------------
     
     func getCurrentCoinsCap() {
-        webService.getCoinsData(fromUrl: "https://api.coinmarketcap.com/v1/ticker/") { (coins, errorMessage) in
+        webService.getCoinsData { (coins, errorMessage) in
             
             switch (coins, errorMessage) {
             case (let coins?, nil):

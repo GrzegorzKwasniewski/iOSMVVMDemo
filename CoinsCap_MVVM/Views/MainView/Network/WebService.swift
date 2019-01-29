@@ -7,19 +7,28 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class WebService: WebServiceProtocol {    
+protocol WebServiceProtocol {
     
-    func getCoinsData(fromUrl url: String, completion: @escaping ([Coin]?, String?) -> Void) {
+    init(baseUrl: String)
+    
+    func getCoinsData(completion: @escaping ([Coin]?, String?) -> Void)
+}
+
+final class WebService: WebServiceProtocol {
+    
+    let baseUrl: String
+    
+    required init(baseUrl: String = "https://api.coinmarketcap.com/v1/ticker/") {
+        self.baseUrl = baseUrl
+    }
+    
+    func getCoinsData(completion: @escaping ([Coin]?, String?) -> Void) {
         
-        Alamofire.request(url).responseArray { (response: DataResponse<[Coin]>) in
+        Alamofire.request(baseUrl).responseArray { (response: DataResponse<[Coin]>) in
             
             switch response.result {
             case .success(let coinsArray):
                 
-                for coin in coinsArray {
-                    print(coin.coinName)
-                }
-
                 completion(coinsArray, nil)
                 
             case .failure(let error):

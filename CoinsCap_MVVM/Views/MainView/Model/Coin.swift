@@ -1,7 +1,3 @@
-//
-//  Coin.swift
-//  CoinsCap_RxSwift
-//
 
 import Foundation
 import ObjectMapper
