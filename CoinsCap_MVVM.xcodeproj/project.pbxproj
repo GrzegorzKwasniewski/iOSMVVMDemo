@@ -171,21 +171,12 @@
 			isa = PBXGroup;
 			children = (
 				B284C1EF2200E1D300B3E572 /* Coordinators */,
-				B20FF24021FDC19000DD0FBD /* Helpers */,
-				B27CEDC620ECA616008911BF /* CoinsCap */,
+				B284C1F92200EF1800B3E572 /* Views */,
 				B27CEDC720ECA626008911BF /* Storyboards */,
 				B27CEDC820ECA633008911BF /* Resources */,
+				B20FF24021FDC19000DD0FBD /* Helpers */,
 			);
 			path = CoinsCap_MVVM;
-			sourceTree = "<group>";
-		};
-		B27CEDC620ECA616008911BF /* CoinsCap */ = {
-			isa = PBXGroup;
-			children = (
-				B20FF24921FDE67700DD0FBD /* MainView */,
-				B20FF24A21FDE68B00DD0FBD /* DetailsView */,
-			);
-			path = CoinsCap;
 			sourceTree = "<group>";
 		};
 		B27CEDC720ECA626008911BF /* Storyboards */ = {
@@ -259,6 +250,15 @@
 				B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B284C1F92200EF1800B3E572 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20FF24921FDE67700DD0FBD /* MainView */,
+				B20FF24A21FDE68B00DD0FBD /* DetailsView */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

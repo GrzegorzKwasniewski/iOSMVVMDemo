@@ -8,19 +8,14 @@ final class MainView: UIView {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    private var titleLabel: UILabel = {
-        return avenirBold(text: "MVVM Demo", size: 25)
-    }()
-    
-    private var coinLabel: UILabel = {
-        return avenirBold(text: "Coin", size: 25)
-    }()
+    private var titleLabel = avenirBold(text: "MVVM Demo", size: 25)
+    private var coinLabel = avenirBold(text: "Coin", size: 25)
     
     private lazy var tableView: UITableView = {
         return createTableView(
             delegate: self,
             dataSource: self,
-            cellIdentifier: "MainViewTableCell"
+            cellIdentifier: MainViewTableCell.reuseId
         )
     }()
     
@@ -69,14 +64,14 @@ final class MainView: UIView {
         
         coinLabel.snp.makeConstraints { (make) in
             make.top.equalTo(titleLabel.snp.bottom).offset(sketchSizeHeight(10))
-            make.left.equalToSuperview().offset(sketchSizeWidth(10))
-            make.right.equalToSuperview().offset(-sketchSizeWidth(10))
+            make.left.equalTo(titleLabel.snp.left)
+            make.right.equalTo(titleLabel.snp.right)
         }
         
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(coinLabel.snp.bottom).offset(20)
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
+            make.left.equalTo(titleLabel.snp.left)
+            make.right.equalTo(titleLabel.snp.right)
             make.bottom.equalToSuperview()
         }
     }
@@ -90,6 +85,7 @@ final class MainView: UIView {
     }
     
     private func setupUI() {
+        backgroundColor = .white
         tableView.refreshControl?.addTarget(
             self,
             action: #selector(refreshCoins),
@@ -99,11 +95,11 @@ final class MainView: UIView {
     
     private func updateUIWithCoins() {
         tableView.reloadData()
-        self.tableView.refreshControl?.endRefreshing()
+        tableView.refreshControl?.endRefreshing()
     }
     
     @objc private func refreshCoins() {
-        self.viewModel.getCurrentCoinsCap()
+        viewModel.getCurrentCoinsCap()
     }
 }
 
@@ -115,20 +111,20 @@ extension MainView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let coin = viewModel.getCoin(forRow: indexPath.row)
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewTableCell.reuseId) as? MainViewTableCell else {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = coin.coinName
-        cell.detailTextLabel?.text = coin.coinPrice
+        cell.configureCell(coin: viewModel.getCoin(forRow: indexPath.row))
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(sketchSizeHeight(80))
     }
 }

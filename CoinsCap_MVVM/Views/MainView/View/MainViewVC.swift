@@ -7,7 +7,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MainViewVC: UITableViewController {
+final class MainViewVC: UIViewController {
     
     // MARK: UI
     //---------------------------------------------------------------------------
@@ -24,6 +24,7 @@ class MainViewVC: UITableViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
     }
 }

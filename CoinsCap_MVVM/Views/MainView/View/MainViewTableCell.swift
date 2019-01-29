@@ -14,11 +14,11 @@ class MainViewTableCell: UITableViewCell {
     //---------------------------------------------------------------------------
     
     private var titleLabel: UILabel = {
-        return avenirBold(text: "", size: 15)
+        return avenirBold(text: "", size: 18)
     }()
     
     private var subtitleLabel: UILabel = {
-        return avenirBold(text: "", size: 10)
+        return avenirBold(text: "", size: 12)
     }()
     
     // MARK: INITIALIZERS
