@@ -2,34 +2,40 @@ import UIKit
 
 final class DashboardFlowController: FlowController {
     
-    private let window: UIWindow
+    // MARK: NAVIGATION CALLBACKS
+    //---------------------------------------------------------------------------
     
     var onFlowFinished: (() -> ())?
     
-    // MARK: Private Properties
+    // MARK: PRIVATE PROPERTIES
+    //---------------------------------------------------------------------------
     
+    private let window: UIWindow
     private var rootViewController: UINavigationController!
     private var newsViewController: MainViewVC!
     
-    // MARK: Initializers
+    // MARK: INITIALIZERS
+    //---------------------------------------------------------------------------
     
     init(window: UIWindow) {
         self.window = window
     }
     
-    // MARK: Public Functions
+    // MARK: PUBLIC FUNCTIONS
+    //---------------------------------------------------------------------------
     
     func runFlow() {
         showMainView()
     }
     
     func willFinishFlow() {
-        
+        // clear resurces
     }
     
-    // MARK: Private Functions
+    // MARK: PRIVATE FUNCTIONS
+    //---------------------------------------------------------------------------
     
-    func showMainView() {
+    private func showMainView() {
         
         let viewModel = MainViewViewModel()
         
