@@ -8,8 +8,14 @@ final class MainView: UIView {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    private var titleLabel = avenirBold(text: "MVVM Demo", size: 25)
-    private var coinLabel = avenirBold(text: "Coin", size: 25)
+    private var titleLabel = avenirBold(text: "MVVM Demo", size: 25, color: .white)
+    private var coinLabel = avenirBold(text: "Coin", size: 25, color: .white)
+    
+    private var topView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = Colors.purpleBackground
+        return view
+    }()
     
     private lazy var tableView: UITableView = {
         return createTableView(
@@ -50,14 +56,23 @@ final class MainView: UIView {
     //---------------------------------------------------------------------------
     
     private func addSubViews() {
-        addSubview(titleLabel)
-        addSubview(coinLabel)
+        addSubview(topView)
+        topView.addSubview(titleLabel)
+        topView.addSubview(coinLabel)
         addSubview(tableView)
     }
     
     private func addConstraints() {
-        titleLabel.snp.makeConstraints { (make) in
+        
+        topView.snp.makeConstraints { (make) in
             make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.height.equalTo(sketchSizeHeight(120))
+        }
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(sketchSizeHeight(30))
             make.left.equalToSuperview().offset(sketchSizeWidth(10))
             make.right.equalToSuperview().offset(-sketchSizeWidth(10))
         }
@@ -69,7 +84,7 @@ final class MainView: UIView {
         }
         
         tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(coinLabel.snp.bottom).offset(20)
+            make.top.equalTo(topView.snp.bottom).offset(20)
             make.left.equalTo(titleLabel.snp.left)
             make.right.equalTo(titleLabel.snp.right)
             make.bottom.equalToSuperview()

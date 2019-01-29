@@ -11,28 +11,25 @@ extension UIViewController {
     }
 }
 
-func avenirBold(text: String, size: CGFloat) -> UILabel {
+func avenirBold(text: String, size: CGFloat, color: UIColor = Colors.darkGreyText) -> UILabel {
     let label = UILabel()
     label.text = text.localized
     label.textAlignment = .left
     label.font = Fonts.avenirBold.withSize(size)
-    label.textColor = Colors.darkGreyText
+    label.textColor = color
     return label
 }
 
 func createTableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource, cellIdentifier: String) -> UITableView {
     
     let tableView = UITableView()
-    tableView.backgroundColor = .clear
+    tableView.backgroundColor = .white
     tableView.delegate = delegate
     tableView.dataSource = dataSource
     tableView.sectionIndexBackgroundColor = .white
     tableView.showsVerticalScrollIndicator = false
     tableView.alwaysBounceVertical = false
     tableView.separatorStyle = .none
-    tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-    tableView.rowHeight = UITableViewAutomaticDimension
-    tableView.clipsToBounds = false
     
     tableView.refreshControl = UIRefreshControl()
     tableView.refreshControl?.backgroundColor = .white
