@@ -24,6 +24,9 @@
 		B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD620ECB8AB008911BF /* WebServiceProtocol.swift */; };
 		B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDD820ECBAB4008911BF /* WebService.swift */; };
 		B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1ED2200DF1500B3E572 /* View+Ext.swift */; };
+		B284C1F12200E20C00B3E572 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F02200E20C00B3E572 /* ApplicationCoordinator.swift */; };
+		B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */; };
+		B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		B27CEDD620ECB8AB008911BF /* WebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
 		B27CEDD820ECBAB4008911BF /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B284C1ED2200DF1500B3E572 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		B284C1F02200E20C00B3E572 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
+		B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F7C9EB022B94CEDFC603C /* Pods-CoinsCap_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */,
-				B20FF24321FDC23A00DD0FBD /* Fonts.swift */,
 				B20FF24521FDC2CE00DD0FBD /* Colors.swift */,
 				B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */,
 				B284C1ED2200DF1500B3E572 /* View+Ext.swift */,
@@ -163,6 +168,7 @@
 		B27CEDB320ECA5E0008911BF /* CoinsCap_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B284C1EF2200E1D300B3E572 /* Coordinators */,
 				B20FF24021FDC19000DD0FBD /* Helpers */,
 				B27CEDC620ECA616008911BF /* CoinsCap */,
 				B27CEDC720ECA626008911BF /* Storyboards */,
@@ -192,6 +198,7 @@
 		B27CEDC820ECA633008911BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B284C1F42200E45100B3E572 /* Fonts */,
 				B27CEDC020ECA5E6008911BF /* Info.plist */,
 				B27CEDBB20ECA5E6008911BF /* Assets.xcassets */,
 				B27CEDB420ECA5E0008911BF /* AppDelegate.swift */,
@@ -231,6 +238,24 @@
 				B27CEDD320ECAF01008911BF /* MainViewViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B284C1EF2200E1D300B3E572 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B284C1F02200E20C00B3E572 /* ApplicationCoordinator.swift */,
+				B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B284C1F42200E45100B3E572 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B20FF24321FDC23A00DD0FBD /* Fonts.swift */,
+				B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +320,7 @@
 			files = (
 				B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */,
 				B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */,
+				B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */,
 				B27CEDCA20ECA65B008911BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */,
+				B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */,
 				B20FF25021FDE74300DD0FBD /* MainView.swift in Sources */,
 				B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */,
 				B20FF24821FDC41A00DD0FBD /* UIViewController+Ext.swift in Sources */,
@@ -374,6 +401,7 @@
 				B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */,
 				B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */,
 				B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */,
+				B284C1F12200E20C00B3E572 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
