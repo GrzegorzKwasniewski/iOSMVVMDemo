@@ -27,6 +27,7 @@
 		B284C1F12200E20C00B3E572 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F02200E20C00B3E572 /* ApplicationCoordinator.swift */; };
 		B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */; };
 		B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */; };
+		B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B284C1F02200E20C00B3E572 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
 		B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableCell.swift; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F7C9EB022B94CEDFC603C /* Pods-CoinsCap_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,6 +222,7 @@
 			children = (
 				B27CEDCB20ECA670008911BF /* MainViewVC.swift */,
 				B20FF24F21FDE74300DD0FBD /* MainView.swift */,
+				B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */,
 				B27CEDD020ECA670008911BF /* Coin.swift in Sources */,
 				B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */,
+				B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */,
 				B27CEDD420ECAF01008911BF /* MainViewViewModel.swift in Sources */,
 				B27CEDD720ECB8AB008911BF /* WebServiceProtocol.swift in Sources */,
 				B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */,

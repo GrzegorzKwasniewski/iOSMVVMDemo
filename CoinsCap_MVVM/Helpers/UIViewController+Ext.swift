@@ -41,7 +41,7 @@ func createTableView(delegate: UITableViewDelegate, dataSource: UITableViewDataS
     
     switch cellIdentifier {
     case "MainViewTableCell":
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.register(MainViewTableCell.self, forCellReuseIdentifier: cellIdentifier)
     default:
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
