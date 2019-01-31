@@ -31,6 +31,7 @@
 		B29E59D7220379F4005F7E11 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59D6220379F4005F7E11 /* MainViewModelTest.swift */; };
 		B29E59DA22037AD3005F7E11 /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59D922037AD3005F7E11 /* WebServiceMock.swift */; };
 		B29E59DC22037CAD005F7E11 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DB22037CAD005F7E11 /* Errors.swift */; };
+		B29E59DE22038611005F7E11 /* WebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DD22038611005F7E11 /* WebServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B29E59D6220379F4005F7E11 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
 		B29E59D922037AD3005F7E11 /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
 		B29E59DB22037CAD005F7E11 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B29E59DD22038611005F7E11 /* WebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTest.swift; sourceTree = "<group>"; };
 		C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,6 +320,7 @@
 		B29E59D4220377DB005F7E11 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				B29E59DD22038611005F7E11 /* WebServiceTest.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29E59DE22038611005F7E11 /* WebServiceTest.swift in Sources */,
 				B29E59D7220379F4005F7E11 /* MainViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,7 +763,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/ViewModel/CoinsCap_MVVMTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/CoinsCap_MVVMTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -785,7 +789,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/ViewModel/CoinsCap_MVVMTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/CoinsCap_MVVMTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinsCap_MVVM.app/CoinsCap_MVVM";
