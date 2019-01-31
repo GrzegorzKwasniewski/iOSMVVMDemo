@@ -55,6 +55,7 @@ final class CoinsDetailsView: UIView {
     }
     
     private func setupUI() {
+        backgroundColor = .white
         coinName.text = viewModel.singleCoin.coinName
         coinValue.text = viewModel.singleCoin.coinPrice
     }

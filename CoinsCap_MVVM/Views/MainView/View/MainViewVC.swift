@@ -12,14 +12,14 @@ final class MainViewVC: UIViewController {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    let mainView = MainView()
+    private var mainView = MainView()
     
     // MARK: INITIALIZERS
     //---------------------------------------------------------------------------
     
     init(viewModel: ViewModelProtocol = MainViewViewModel()) {
         super.init(nibName: nil, bundle: nil)
-        
+        self.mainView = MainView(viewModel: viewModel)
         setUpFullscreenView(mainView: mainView)
     }
     

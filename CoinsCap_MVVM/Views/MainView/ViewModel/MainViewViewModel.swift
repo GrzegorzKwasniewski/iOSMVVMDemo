@@ -11,6 +11,8 @@ protocol ViewModelProtocol {
     
     init(webService: WebServiceProtocol)
     
+    var onShowSingleCoin: ((Coin) -> Void)? {get set}
+    
     var coinsCollection: BehaviorRelay<[Coin]> {get}
     var errorMessage: BehaviorRelay<String> {get}
     var webService: WebServiceProtocol {get}
@@ -21,6 +23,11 @@ protocol ViewModelProtocol {
 }
 
 final class MainViewViewModel: ViewModelProtocol {
+    
+    // MARK: NAVIGATION CALLBACKS
+    //---------------------------------------------------------------------------
+    
+    var onShowSingleCoin: ((Coin) -> Void)?
     
     // MARK: PUBLIC PROPERTIES
     //---------------------------------------------------------------------------

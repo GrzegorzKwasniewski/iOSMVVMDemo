@@ -142,7 +142,9 @@ extension MainView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let singleCoin = viewModel.getCoin(forRow: indexPath.row)
         
+        viewModel.onShowSingleCoin?(singleCoin)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

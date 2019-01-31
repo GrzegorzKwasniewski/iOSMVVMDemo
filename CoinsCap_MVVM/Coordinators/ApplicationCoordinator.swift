@@ -13,19 +13,14 @@ protocol FlowController {
 final class ApplicationCoordinator: Coordinator {
     
     private let window: UIWindow
-    private var rootViewController: UIViewController
     private var dashboardFlowController: DashboardFlowController?
-    private var nextViewCoordinator: Coordinator?
     
     init(window: UIWindow) {
         self.window = window
-        self.rootViewController = UINavigationController()
     }
     
     func start() {
-        window.rootViewController = rootViewController
         startDashboardFlowController()
-        window.makeKeyAndVisible()
     }
     
     func startDashboardFlowController() {

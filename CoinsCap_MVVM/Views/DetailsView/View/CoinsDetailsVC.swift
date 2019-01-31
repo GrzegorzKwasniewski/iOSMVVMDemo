@@ -8,14 +8,14 @@ final class CoinsDetailsVC: UIViewController {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    let mainView = CoinsDetailsView()
+    private var mainView = CoinsDetailsView()
     
     // MARK: INITIALIZERS
     //---------------------------------------------------------------------------
     
     init(viewModel: DetailsViewModelProtocol = DetailsViewViewModel()) {
         super.init(nibName: nil, bundle: nil)
-        
+        self.mainView = CoinsDetailsView(viewModel: viewModel)
         setUpFullscreenView(mainView: mainView)
     }
     

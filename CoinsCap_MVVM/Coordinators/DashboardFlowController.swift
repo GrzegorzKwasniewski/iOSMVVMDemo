@@ -10,9 +10,8 @@ final class DashboardFlowController: FlowController {
     // MARK: PRIVATE PROPERTIES
     //---------------------------------------------------------------------------
     
-    private let window: UIWindow
-    private var rootViewController: UINavigationController!
-    private var newsViewController: MainViewVC!
+    private var window: UIWindow?
+    private var rootViewController: UINavigationController?
     
     // MARK: INITIALIZERS
     //---------------------------------------------------------------------------
@@ -29,7 +28,8 @@ final class DashboardFlowController: FlowController {
     }
     
     func willFinishFlow() {
-        // clear resurces
+        rootViewController = nil
+        window = nil
     }
     
     // MARK: PRIVATE FUNCTIONS
@@ -39,15 +39,22 @@ final class DashboardFlowController: FlowController {
         
         let viewModel = MainViewViewModel()
         
-//        viewModel.onSuccessfulLogin = { [weak self] in
-//            self?.showRootViewController()
-//        }
+        viewModel.onShowSingleCoin = { [weak self] coin in
+            self?.showDetailsView(withCoin: coin)
+        }
         
         let mainView = MainViewVC(viewModel: viewModel)
         
         self.rootViewController = UINavigationController(rootViewController: mainView)
-        rootViewController.isNavigationBarHidden = true
-        window.rootViewController = rootViewController
-        window.makeKeyAndVisible()
+        window?.rootViewController = rootViewController
+        window?.makeKeyAndVisible()
+    }
+    
+    private func showDetailsView(withCoin coin: Coin) {
+        
+        let viewModel = DetailsViewViewModel(singleCoin: coin)
+        
+        let detailsView = CoinsDetailsVC(viewModel: viewModel)
+        self.rootViewController?.pushViewController(detailsView, animated: true)
     }
 }
