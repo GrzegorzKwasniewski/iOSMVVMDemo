@@ -113,7 +113,7 @@ final class MainView: UIView {
                 self?.updateUIWithCoins()
             }).disposed(by: disposeBag)
         
-        viewModel.errorMessage.asDriver(onErrorJustReturn: "")
+        viewModel.errorMessage.asDriver()
             .drive(onNext: { [weak self] message in
                 self?.rootVC?.showErrorMessage(message: message)
             }).disposed(by: disposeBag)

@@ -65,7 +65,7 @@ final class MainViewViewModel: ViewModelProtocol {
                 self?.errorMessage.accept(errorMessage)
                 
             case (.none, .none):
-                print("Defult case")
+                self?.errorMessage.accept(ErrorMessage.none.rawValue)
             }
         }
     }
