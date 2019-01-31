@@ -195,27 +195,19 @@
 		B27CEDB320ECA5E0008911BF /* CoinsCap_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B29E59D822037AAE005F7E11 /* Mock */,
 				B284C1EF2200E1D300B3E572 /* Coordinators */,
 				B284C1F92200EF1800B3E572 /* Views */,
-				B27CEDC720ECA626008911BF /* Storyboards */,
 				B27CEDC820ECA633008911BF /* Resources */,
+				B29E59D822037AAE005F7E11 /* Mock */,
 				B20FF24021FDC19000DD0FBD /* Helpers */,
 			);
 			path = CoinsCap_MVVM;
 			sourceTree = "<group>";
 		};
-		B27CEDC720ECA626008911BF /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		B27CEDC820ECA633008911BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */,
 				B284C1F42200E45100B3E572 /* Fonts */,
 				B27CEDC020ECA5E6008911BF /* Info.plist */,
 				B27CEDBB20ECA5E6008911BF /* Assets.xcassets */,

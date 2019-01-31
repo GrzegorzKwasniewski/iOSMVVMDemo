@@ -1,7 +1,3 @@
-//
-//  ViewModel.swift
-//  CoinsCap_MVVM
-//
 
 import Foundation
 import RxSwift
