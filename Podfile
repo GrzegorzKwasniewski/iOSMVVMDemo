@@ -12,5 +12,15 @@ target 'CoinsCap_MVVM' do
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
   pod 'SnapKit', '~> 4.0.0'
+  
+  def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
+
+target 'CoinsCap_MVVMTests' do
+    inherit! :search_paths
+    testing_pods
+end
 
 end

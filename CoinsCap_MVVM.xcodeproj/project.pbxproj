@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50562C397FD2BEBD612C2874 /* Pods_CoinsCap_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */; };
+		7D38607A674E0374DB06761F /* Pods_CoinsCap_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */; };
 		B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */; };
 		B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24321FDC23A00DD0FBD /* Fonts.swift */; };
 		B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FF24521FDC2CE00DD0FBD /* Colors.swift */; };
@@ -27,9 +28,21 @@
 		B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */; };
 		B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */; };
 		B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */; };
+		B29E59CC2203772B005F7E11 /* CoinsCap_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B29E59CE2203772B005F7E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B27CEDA920ECA5E0008911BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B27CEDB020ECA5E0008911BF;
+			remoteInfo = CoinsCap_MVVM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C15F0C6221DC3EDEDDE803F /* Pods-CoinsCap_MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41BCE05825F916F9D360A412 /* Pods-CoinsCap_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B20FF24121FDC1AE00DD0FBD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		B20FF24321FDC23A00DD0FBD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -52,6 +65,11 @@
 		B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
 		B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableCell.swift; sourceTree = "<group>"; };
+		B29E59C92203772B005F7E11 /* CoinsCap_MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinsCap_MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCap_MVVMTests.swift; sourceTree = "<group>"; };
+		B29E59CD2203772B005F7E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F7C9EB022B94CEDFC603C /* Pods-CoinsCap_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B29E59C62203772B005F7E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D38607A674E0374DB06761F /* Pods_CoinsCap_MVVMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */,
+				C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +108,8 @@
 			children = (
 				41BCE05825F916F9D360A412 /* Pods-CoinsCap_MVVM.debug.xcconfig */,
 				EB1F7C9EB022B94CEDFC603C /* Pods-CoinsCap_MVVM.release.xcconfig */,
+				1C15F0C6221DC3EDEDDE803F /* Pods-CoinsCap_MVVMTests.debug.xcconfig */,
+				D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -151,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B27CEDB320ECA5E0008911BF /* CoinsCap_MVVM */,
+				B29E59CA2203772B005F7E11 /* CoinsCap_MVVMTests */,
 				B27CEDB220ECA5E0008911BF /* Products */,
 				89D46482D29D45AA749D7534 /* Pods */,
 				2F10492335D7AD56CFE4222E /* Frameworks */,
@@ -161,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				B27CEDB120ECA5E0008911BF /* CoinsCap_MVVM.app */,
+				B29E59C92203772B005F7E11 /* CoinsCap_MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +289,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B29E59CA2203772B005F7E11 /* CoinsCap_MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */,
+				B29E59CD2203772B005F7E11 /* Info.plist */,
+			);
+			path = CoinsCap_MVVMTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,18 +320,42 @@
 			productReference = B27CEDB120ECA5E0008911BF /* CoinsCap_MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B29E59C82203772B005F7E11 /* CoinsCap_MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29E59D22203772B005F7E11 /* Build configuration list for PBXNativeTarget "CoinsCap_MVVMTests" */;
+			buildPhases = (
+				B524BEC9DB321740AFF0B113 /* [CP] Check Pods Manifest.lock */,
+				B29E59C52203772B005F7E11 /* Sources */,
+				B29E59C62203772B005F7E11 /* Frameworks */,
+				B29E59C72203772B005F7E11 /* Resources */,
+				058E8D5797A65EB9C10BDD50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29E59CF2203772B005F7E11 /* PBXTargetDependency */,
+			);
+			name = CoinsCap_MVVMTests;
+			productName = CoinsCap_MVVMTests;
+			productReference = B29E59C92203772B005F7E11 /* CoinsCap_MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B27CEDA920ECA5E0008911BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Grzegorz Kwasniewski";
 				TargetAttributes = {
 					B27CEDB020ECA5E0008911BF = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					B29E59C82203772B005F7E11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B27CEDB020ECA5E0008911BF;
 					};
 				};
 			};
@@ -309,6 +373,7 @@
 			projectRoot = "";
 			targets = (
 				B27CEDB020ECA5E0008911BF /* CoinsCap_MVVM */,
+				B29E59C82203772B005F7E11 /* CoinsCap_MVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,9 +390,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B29E59C72203772B005F7E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		058E8D5797A65EB9C10BDD50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2C2E9CD8933680378CD20544 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +476,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinsCap_MVVM/Pods-CoinsCap_MVVM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B524BEC9DB321740AFF0B113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinsCap_MVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -405,7 +523,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B29E59C52203772B005F7E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29E59CC2203772B005F7E11 /* CoinsCap_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B29E59CF2203772B005F7E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B27CEDB020ECA5E0008911BF /* CoinsCap_MVVM */;
+			targetProxy = B29E59CE2203772B005F7E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */ = {
@@ -571,6 +705,53 @@
 			};
 			name = Release;
 		};
+		B29E59D02203772B005F7E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C15F0C6221DC3EDEDDE803F /* Pods-CoinsCap_MVVMTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K692Z62S3;
+				INFOPLIST_FILE = CoinsCap_MVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinsCap_MVVM.app/CoinsCap_MVVM";
+			};
+			name = Debug;
+		};
+		B29E59D12203772B005F7E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K692Z62S3;
+				INFOPLIST_FILE = CoinsCap_MVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinsCap_MVVM.app/CoinsCap_MVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +769,15 @@
 			buildConfigurations = (
 				B27CEDC420ECA5E6008911BF /* Debug */,
 				B27CEDC520ECA5E6008911BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29E59D22203772B005F7E11 /* Build configuration list for PBXNativeTarget "CoinsCap_MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29E59D02203772B005F7E11 /* Debug */,
+				B29E59D12203772B005F7E11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
