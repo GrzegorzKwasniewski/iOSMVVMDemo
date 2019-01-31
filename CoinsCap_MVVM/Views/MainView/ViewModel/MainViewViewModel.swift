@@ -12,6 +12,7 @@ protocol ViewModelProtocol {
     init(webService: WebServiceProtocol)
     
     var coinsCollection: BehaviorRelay<[Coin]> {get}
+    var errorMessage: BehaviorRelay<String> {get}
     var webService: WebServiceProtocol {get}
     var coinsCount: Int {get}
 
@@ -26,6 +27,7 @@ final class MainViewViewModel: ViewModelProtocol {
     
     let webService: WebServiceProtocol
     let coinsCollection = BehaviorRelay<[Coin]>(value: [Coin]())
+    let errorMessage = BehaviorRelay<String>(value: "")
     
     var coinsCount: Int {
         return coinsCollection.value.count
@@ -42,15 +44,17 @@ final class MainViewViewModel: ViewModelProtocol {
     //---------------------------------------------------------------------------
     
     func getCurrentCoinsCap() {
-        webService.getCoinsData { (coins, errorMessage) in
+        webService.getCoinsData { [weak self] (coins, errorMessage) in
             
             switch (coins, errorMessage) {
             case (let coins?, nil):
-                
-                self.coinsCollection.accept(coins)
+                                
+                self?.coinsCollection.accept(coins)
                 
             case (_, .some(let errorMessage)):
-                print(errorMessage)
+                
+                self?.errorMessage.accept(errorMessage)
+                
             case (.none, .none):
                 print("Defult case")
             }

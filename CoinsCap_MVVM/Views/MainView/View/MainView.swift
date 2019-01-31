@@ -92,9 +92,15 @@ final class MainView: UIView {
     }
     
     private func bindUI() {
-        viewModel.coinsCollection.asDriver()
-            .drive(onNext: { [weak self] _ in self?.updateUIWithCoins() })
-            .disposed(by: disposeBag)
+        viewModel.coinsCollection.asDriver(onErrorJustReturn: [Coin]())
+            .drive(onNext: { [weak self] _ in
+                self?.updateUIWithCoins()
+            }).disposed(by: disposeBag)
+        
+        viewModel.errorMessage.asDriver(onErrorJustReturn: "")
+            .drive(onNext: { [weak self] message in
+                self?.rootVC?.showErrorMessage(message: message)
+            }).disposed(by: disposeBag)
         
         viewModel.getCurrentCoinsCap()
     }

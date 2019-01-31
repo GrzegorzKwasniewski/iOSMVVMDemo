@@ -9,6 +9,15 @@ extension UIViewController {
             make.edges.equalToSuperview()
         }
     }
+    
+    func showErrorMessage(message: String) {
+        let alert = UIAlertController(title: message, message: "", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: { _ in
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 func avenirBold(text: String, size: CGFloat, color: UIColor = Colors.darkGreyText) -> UILabel {

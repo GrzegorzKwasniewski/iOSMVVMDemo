@@ -1,6 +1,21 @@
 
 import UIKit
 
+extension UIView {
+    
+    var rootVC: UIViewController? {
+        
+        let window = UIApplication.shared.keyWindow
+        var rootVc = window?.rootViewController
+        
+        while (rootVc?.presentedViewController != nil) {
+            rootVc = rootVc?.presentedViewController
+        }
+        
+        return rootVc
+    }
+}
+
 func sketchSize(_ size: Float) -> Float {
     let screenWidth = Float(UIScreen.main.bounds.size.width)
     let iPhonePlusWidth = Float(414.0)
