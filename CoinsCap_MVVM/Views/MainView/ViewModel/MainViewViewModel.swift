@@ -16,6 +16,9 @@ protocol ViewModelProtocol {
 
     func getCurrentCoinsCap()
     func getCoin(forRow row: Int) -> Coin
+    
+    // Dynamic
+    //var coinsCollection: Dynamic<[Coin]> {get}
 }
 
 final class MainViewViewModel: ViewModelProtocol {
@@ -35,6 +38,9 @@ final class MainViewViewModel: ViewModelProtocol {
     var coinsCount: Int {
         return coinsCollection.value.count
     }
+    
+    // Dynamic
+    //private(set) var coinsCollection = Dynamic([Coin]())
     
     // MARK: INITIALIZERS
     //---------------------------------------------------------------------------

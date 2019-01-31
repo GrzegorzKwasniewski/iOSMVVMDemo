@@ -33,6 +33,7 @@
 		B29E59DE22038611005F7E11 /* WebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DD22038611005F7E11 /* WebServiceTest.swift */; };
 		B29E59E022038D3E005F7E11 /* CoinsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DF22038D3E005F7E11 /* CoinsDetailsView.swift */; };
 		B29E59E222038EDF005F7E11 /* DetailsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59E122038EDF005F7E11 /* DetailsViewViewModel.swift */; };
+		B29E59E42203B202005F7E11 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59E32203B202005F7E11 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B29E59DD22038611005F7E11 /* WebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTest.swift; sourceTree = "<group>"; };
 		B29E59DF22038D3E005F7E11 /* CoinsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsDetailsView.swift; sourceTree = "<group>"; };
 		B29E59E122038EDF005F7E11 /* DetailsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewViewModel.swift; sourceTree = "<group>"; };
+		B29E59E32203B202005F7E11 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */,
 				B284C1ED2200DF1500B3E572 /* View+Ext.swift */,
 				B29E59DB22037CAD005F7E11 /* Errors.swift */,
+				B29E59E32203B202005F7E11 /* Dynamic.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20FF24221FDC1AE00DD0FBD /* String+Ext.swift in Sources */,
+				B29E59E42203B202005F7E11 /* Dynamic.swift in Sources */,
 				B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */,
 				B20FF25021FDE74300DD0FBD /* MainView.swift in Sources */,
 				B20FF24621FDC2CE00DD0FBD /* Colors.swift in Sources */,

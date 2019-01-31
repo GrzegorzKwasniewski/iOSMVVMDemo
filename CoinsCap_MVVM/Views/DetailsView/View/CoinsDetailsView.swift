@@ -7,8 +7,8 @@ final class CoinsDetailsView: UIView {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    private var coinName = avenirBold(text: "", size: 25, color: Colors.purpleBackground)
-    private var coinValue = avenirBold(text: "", size: 22, color: Colors.purpleBackground)
+    private let coinName = avenirBold(text: "", size: 25, color: Colors.purpleBackground)
+    private let coinValue = avenirBold(text: "", size: 22, color: Colors.purpleBackground)
     
     // MARK: VIEW MODEL
     //---------------------------------------------------------------------------

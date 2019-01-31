@@ -8,10 +8,10 @@ final class MainView: UIView {
     // MARK: UI
     //---------------------------------------------------------------------------
     
-    private var titleLabel = avenirBold(text: "MVVM Demo", size: 25, color: .white)
-    private var coinLabel = avenirBold(text: "Crypto Coins", size: 22, color: .white)
+    private let titleLabel = avenirBold(text: "MVVM Demo", size: 25, color: .white)
+    private let coinLabel = avenirBold(text: "Crypto Coins", size: 22, color: .white)
     
-    private var topView: UIView = {
+    private let topView: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = Colors.purpleBackground
         return view
@@ -23,6 +23,14 @@ final class MainView: UIView {
             dataSource: self,
             cellIdentifier: MainViewTableCell.reuseId
         )
+    }()
+    
+    private let downloadButton: UIButton = {
+        let view = UIButton(frame: .zero)
+        view.setTitle("Get coins".localized, for: .normal)
+        view.backgroundColor = Colors.purpleBackground
+        view.addTarget(self, action: #selector(refreshCoins), for: .touchUpInside)
+        return view
     }()
     
     // MARK: PRIVATE PROPERTIES
@@ -60,6 +68,7 @@ final class MainView: UIView {
         topView.addSubview(titleLabel)
         topView.addSubview(coinLabel)
         addSubview(tableView)
+        addSubview(downloadButton)
     }
     
     private func addConstraints() {
@@ -84,9 +93,16 @@ final class MainView: UIView {
         }
         
         tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(topView.snp.bottom).offset(20)
+            make.top.equalTo(topView.snp.bottom)
             make.left.equalTo(titleLabel.snp.left)
             make.right.equalTo(titleLabel.snp.right)
+            make.bottom.equalToSuperview()
+        }
+        
+        downloadButton.snp.makeConstraints { (make) in
+            make.height.equalTo(sketchSizeHeight(50))
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
             make.bottom.equalToSuperview()
         }
     }
@@ -102,7 +118,10 @@ final class MainView: UIView {
                 self?.rootVC?.showErrorMessage(message: message)
             }).disposed(by: disposeBag)
         
-        viewModel.getCurrentCoinsCap()
+        // Dynamic
+//        viewModel.coinsCollection.bind { [weak self] _ in
+//            self?.updateUIWithCoins()
+//        }
     }
     
     private func setupUI() {
