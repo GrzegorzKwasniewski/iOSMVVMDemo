@@ -65,7 +65,7 @@ final class MainView: UIView {
     private func addConstraints() {
         
         topView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(sketchSizeHeight(45))
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.height.equalTo(sketchSizeHeight(120))

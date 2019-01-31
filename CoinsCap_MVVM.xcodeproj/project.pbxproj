@@ -17,7 +17,6 @@
 		B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDB420ECA5E0008911BF /* AppDelegate.swift */; };
 		B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBB20ECA5E6008911BF /* Assets.xcassets */; };
 		B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */; };
-		B27CEDCA20ECA65B008911BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27CEDC920ECA65B008911BF /* Main.storyboard */; };
 		B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCB20ECA670008911BF /* MainViewVC.swift */; };
 		B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCC20ECA670008911BF /* CoinsDetailsVC.swift */; };
 		B27CEDD020ECA670008911BF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CEDCD20ECA670008911BF /* Coin.swift */; };
@@ -59,7 +58,6 @@
 		B27CEDBB20ECA5E6008911BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27CEDBE20ECA5E6008911BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B27CEDC020ECA5E6008911BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B27CEDC920ECA65B008911BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B27CEDCB20ECA670008911BF /* MainViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewVC.swift; sourceTree = "<group>"; };
 		B27CEDCC20ECA670008911BF /* CoinsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsDetailsVC.swift; sourceTree = "<group>"; };
 		B27CEDCD20ECA670008911BF /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				B27CEDBD20ECA5E6008911BF /* LaunchScreen.storyboard */,
-				B27CEDC920ECA65B008911BF /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -412,7 +409,6 @@
 				B27CEDBF20ECA5E6008911BF /* LaunchScreen.storyboard in Resources */,
 				B27CEDBC20ECA5E6008911BF /* Assets.xcassets in Resources */,
 				B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */,
-				B27CEDCA20ECA65B008911BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
