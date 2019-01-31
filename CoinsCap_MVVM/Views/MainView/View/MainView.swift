@@ -9,7 +9,7 @@ final class MainView: UIView {
     //---------------------------------------------------------------------------
     
     private var titleLabel = avenirBold(text: "MVVM Demo", size: 25, color: .white)
-    private var coinLabel = avenirBold(text: "Coin", size: 25, color: .white)
+    private var coinLabel = avenirBold(text: "Crypto Coins", size: 22, color: .white)
     
     private var topView: UIView = {
         let view = UIView(frame: .zero)

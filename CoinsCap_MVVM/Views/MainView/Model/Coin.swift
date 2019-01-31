@@ -16,6 +16,11 @@ struct Coin: ImmutableMappable {
         coinName = (try? map.value("name")) ?? "no data"
         coinPrice = (try? map.value("price_usd")) ?? "no data"
     }
+    
+    init() {
+        self.coinName = ""
+        self.coinPrice = ""
+    }
 }
 
 extension Coin: Equatable {

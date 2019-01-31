@@ -6,56 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes>
-        <!--Coins DetailsVC-->
-        <scene sceneID="S4E-10-ges">
-            <objects>
-                <viewController storyboardIdentifier="CoinsDetailsVC" id="7Tj-Cj-ccg" customClass="CoinsDetailsVC" customModule="CoinsCap_MVVM" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G12-9h-DaA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-2i-bzZ">
-                                <rect key="frame" x="131.5" y="60" width="112" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="Cwu-QN-w2f"/>
-                                    <constraint firstAttribute="height" constant="29" id="Uef-d7-cWA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coin value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANV-CA-t5z">
-                                <rect key="frame" x="149" y="137" width="77" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="7gZ-TE-xpn"/>
-                                    <constraint firstAttribute="height" constant="21" id="hj3-gY-Fkf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ANV-CA-t5z" firstAttribute="centerX" secondItem="G12-9h-DaA" secondAttribute="centerX" id="EME-B9-nA4"/>
-                            <constraint firstItem="6bq-2i-bzZ" firstAttribute="top" secondItem="alI-vC-bGR" secondAttribute="top" constant="40" id="HmH-A4-p5b"/>
-                            <constraint firstItem="ANV-CA-t5z" firstAttribute="top" secondItem="6bq-2i-bzZ" secondAttribute="bottom" constant="48" id="e5I-Or-tYm"/>
-                            <constraint firstItem="6bq-2i-bzZ" firstAttribute="centerX" secondItem="G12-9h-DaA" secondAttribute="centerX" id="wXx-5i-YQg"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="alI-vC-bGR"/>
-                    </view>
-                    <connections>
-                        <outlet property="coinName" destination="6bq-2i-bzZ" id="cs2-dk-V9j"/>
-                        <outlet property="coinValue" destination="ANV-CA-t5z" id="W0B-rj-jJy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RXL-87-6pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="916" y="115"/>
-        </scene>
-    </scenes>
+    <scenes/>
 </document>

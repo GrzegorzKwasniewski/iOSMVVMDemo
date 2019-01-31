@@ -32,6 +32,8 @@
 		B29E59DA22037AD3005F7E11 /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59D922037AD3005F7E11 /* WebServiceMock.swift */; };
 		B29E59DC22037CAD005F7E11 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DB22037CAD005F7E11 /* Errors.swift */; };
 		B29E59DE22038611005F7E11 /* WebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DD22038611005F7E11 /* WebServiceTest.swift */; };
+		B29E59E022038D3E005F7E11 /* CoinsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DF22038D3E005F7E11 /* CoinsDetailsView.swift */; };
+		B29E59E222038EDF005F7E11 /* DetailsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59E122038EDF005F7E11 /* DetailsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		B29E59D922037AD3005F7E11 /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
 		B29E59DB22037CAD005F7E11 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		B29E59DD22038611005F7E11 /* WebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTest.swift; sourceTree = "<group>"; };
+		B29E59DF22038D3E005F7E11 /* CoinsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsDetailsView.swift; sourceTree = "<group>"; };
+		B29E59E122038EDF005F7E11 /* DetailsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewViewModel.swift; sourceTree = "<group>"; };
 		C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,8 +153,6 @@
 			children = (
 				B20FF24B21FDE69F00DD0FBD /* View */,
 				B20FF24C21FDE6AE00DD0FBD /* ViewModel */,
-				B20FF24D21FDE6B900DD0FBD /* Model */,
-				B20FF24E21FDE6E900DD0FBD /*  Network */,
 			);
 			path = DetailsView;
 			sourceTree = "<group>";
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B27CEDCC20ECA670008911BF /* CoinsDetailsVC.swift */,
+				B29E59DF22038D3E005F7E11 /* CoinsDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,22 +169,9 @@
 		B20FF24C21FDE6AE00DD0FBD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B29E59E122038EDF005F7E11 /* DetailsViewViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B20FF24D21FDE6B900DD0FBD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B20FF24E21FDE6E900DD0FBD /*  Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = " Network";
 			sourceTree = "<group>";
 		};
 		B27CEDA820ECA5E0008911BF = {
@@ -550,6 +540,7 @@
 				B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */,
 				B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */,
 				B29E59DA22037AD3005F7E11 /* WebServiceMock.swift in Sources */,
+				B29E59E222038EDF005F7E11 /* DetailsViewViewModel.swift in Sources */,
 				B27CEDD020ECA670008911BF /* Coin.swift in Sources */,
 				B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */,
 				B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */,
@@ -557,6 +548,7 @@
 				B29E59DC22037CAD005F7E11 /* Errors.swift in Sources */,
 				B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */,
 				B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */,
+				B29E59E022038D3E005F7E11 /* CoinsDetailsView.swift in Sources */,
 				B284C1F12200E20C00B3E572 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

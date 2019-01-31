@@ -1,25 +1,26 @@
-//
-//  CoinsDetailsVC.swift
-//  CoinsCap_RxSwift
-//
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class CoinsDetailsVC: UIViewController {
+final class CoinsDetailsVC: UIViewController {
     
-    @IBOutlet weak var coinName: UILabel!
-    @IBOutlet weak var coinValue: UILabel!
+    // MARK: UI
+    //---------------------------------------------------------------------------
     
-    var singleCoin: Coin?
+    let mainView = CoinsDetailsView()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: INITIALIZERS
+    //---------------------------------------------------------------------------
+    
+    init(viewModel: DetailsViewModelProtocol = DetailsViewViewModel()) {
+        super.init(nibName: nil, bundle: nil)
         
-        coinName.text = singleCoin?.coinName
-        coinValue.text = singleCoin?.coinPrice
+        setUpFullscreenView(mainView: mainView)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 }
