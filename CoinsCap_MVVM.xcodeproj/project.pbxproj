@@ -28,7 +28,9 @@
 		B284C1F32200E2C700B3E572 /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F22200E2C700B3E572 /* DashboardFlowController.swift */; };
 		B284C1F62200E46900B3E572 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */; };
 		B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */; };
-		B29E59CC2203772B005F7E11 /* CoinsCap_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */; };
+		B29E59D7220379F4005F7E11 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59D6220379F4005F7E11 /* MainViewModelTest.swift */; };
+		B29E59DA22037AD3005F7E11 /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59D922037AD3005F7E11 /* WebServiceMock.swift */; };
+		B29E59DC22037CAD005F7E11 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E59DB22037CAD005F7E11 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +68,11 @@
 		B284C1F52200E46500B3E572 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B284C1F72200EAEE00B3E572 /* MainViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableCell.swift; sourceTree = "<group>"; };
 		B29E59C92203772B005F7E11 /* CoinsCap_MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinsCap_MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCap_MVVMTests.swift; sourceTree = "<group>"; };
 		B29E59CD2203772B005F7E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29E59D5220379F4005F7E11 /* CoinsCap_MVVMTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoinsCap_MVVMTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B29E59D6220379F4005F7E11 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
+		B29E59D922037AD3005F7E11 /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		B29E59DB22037CAD005F7E11 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		C90EDAD866F22CA13E0E70B5 /* Pods_CoinsCap_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinsCap_MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinsCap_MVVMTests/Pods-CoinsCap_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDF3BA73EFDEDD067CB14946 /* Pods_CoinsCap_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinsCap_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +126,7 @@
 				B20FF24521FDC2CE00DD0FBD /* Colors.swift */,
 				B20FF24721FDC41A00DD0FBD /* UIViewController+Ext.swift */,
 				B284C1ED2200DF1500B3E572 /* View+Ext.swift */,
+				B29E59DB22037CAD005F7E11 /* Errors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 		B27CEDB320ECA5E0008911BF /* CoinsCap_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B29E59D822037AAE005F7E11 /* Mock */,
 				B284C1EF2200E1D300B3E572 /* Coordinators */,
 				B284C1F92200EF1800B3E572 /* Views */,
 				B27CEDC720ECA626008911BF /* Storyboards */,
@@ -292,10 +299,35 @@
 		B29E59CA2203772B005F7E11 /* CoinsCap_MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				B29E59CB2203772B005F7E11 /* CoinsCap_MVVMTests.swift */,
+				B29E59D3220377D1005F7E11 /* ViewModel */,
+				B29E59D4220377DB005F7E11 /* WebService */,
 				B29E59CD2203772B005F7E11 /* Info.plist */,
+				B29E59D5220379F4005F7E11 /* CoinsCap_MVVMTests-Bridging-Header.h */,
 			);
 			path = CoinsCap_MVVMTests;
+			sourceTree = "<group>";
+		};
+		B29E59D3220377D1005F7E11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B29E59D6220379F4005F7E11 /* MainViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B29E59D4220377DB005F7E11 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		B29E59D822037AAE005F7E11 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B29E59D922037AD3005F7E11 /* WebServiceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +387,7 @@
 					};
 					B29E59C82203772B005F7E11 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = B27CEDB020ECA5E0008911BF;
 					};
 				};
@@ -513,10 +546,12 @@
 				B27CEDCE20ECA670008911BF /* MainViewVC.swift in Sources */,
 				B27CEDD920ECBAB4008911BF /* WebService.swift in Sources */,
 				B27CEDCF20ECA670008911BF /* CoinsDetailsVC.swift in Sources */,
+				B29E59DA22037AD3005F7E11 /* WebServiceMock.swift in Sources */,
 				B27CEDD020ECA670008911BF /* Coin.swift in Sources */,
 				B20FF24421FDC23A00DD0FBD /* Fonts.swift in Sources */,
 				B284C1F82200EAEE00B3E572 /* MainViewTableCell.swift in Sources */,
 				B27CEDD420ECAF01008911BF /* MainViewViewModel.swift in Sources */,
+				B29E59DC22037CAD005F7E11 /* Errors.swift in Sources */,
 				B284C1EE2200DF1500B3E572 /* View+Ext.swift in Sources */,
 				B27CEDB520ECA5E0008911BF /* AppDelegate.swift in Sources */,
 				B284C1F12200E20C00B3E572 /* ApplicationCoordinator.swift in Sources */,
@@ -527,7 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29E59CC2203772B005F7E11 /* CoinsCap_MVVMTests.swift in Sources */,
+				B29E59D7220379F4005F7E11 /* MainViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +745,7 @@
 			baseConfigurationReference = 1C15F0C6221DC3EDEDDE803F /* Pods-CoinsCap_MVVMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K692Z62S3;
 				INFOPLIST_FILE = CoinsCap_MVVMTests/Info.plist;
@@ -723,6 +759,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/ViewModel/CoinsCap_MVVMTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinsCap_MVVM.app/CoinsCap_MVVM";
@@ -734,6 +772,7 @@
 			baseConfigurationReference = D807D559C75A0F71676A82BE /* Pods-CoinsCap_MVVMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K692Z62S3;
 				INFOPLIST_FILE = CoinsCap_MVVMTests/Info.plist;
@@ -746,6 +785,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmobile.CoinsCap-MVVMTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinsCap_MVVMTests/ViewModel/CoinsCap_MVVMTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinsCap_MVVM.app/CoinsCap_MVVM";
