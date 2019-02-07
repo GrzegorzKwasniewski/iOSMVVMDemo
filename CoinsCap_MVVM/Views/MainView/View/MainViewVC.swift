@@ -4,8 +4,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
 final class MainViewVC: UIViewController {
     
